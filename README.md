@@ -1,29 +1,28 @@
 
-Land Administration Smart Contract
+# Land Administration Smart Contract
 
-A Solidity-based smart contract for managing land records and fractional ownership.
-The contract handles trusted member onboarding, land registration, share distribution,
-sale posting, and secure ownership transfers on-chain.
+A Solidity-based smart contract system for decentralized land management.  
+It supports **trusted member onboarding**, **land registration**, **fractional ownership**, **sale posting**, and **secure on-chain transfers** of land shares.
 
-Features: 
-Land Registration: Master registers land with district, taluk, village & patta number.
+## Features
+- **Land Registration:** Master registers land with district, taluk, village, and patta details.
+- **Trusted Members:** Only verified members can own or buy land.
+- **Fractional Ownership:** Supports multiple owners with defined share percentages.
+- **Share Transfer:** Owners can transfer shares when the land is marked as transferable.
+- **Sale Posting:** Owners can list land shares for sale with a specified price.
+- **Secure Purchase:** Buyers pay in ETH and receive ownership shares automatically.
+- **Duplicate Prevention:** Prevents registering the same land more than once.
 
-Trusted Members: Only verified users can own or buy land.
+## Deployment (Remix)
+1. Open **https://remix.ethereum.org**
+2. Create a new file: **LandAdministration.sol**
+3. Paste the contract code
+4. Compile using **Solidity 0.8.x**
+5. Deploy using **Remix VM** or **Injected Web3**
 
-Ownership Shares: Supports fractional land ownership (e.g., 40%, 60%).
+## Tech Stack
+- **Solidity 0.8.x**
+- **Ethereum Virtual Machine (EVM)**
 
-Transfer System: Owners can transfer shares if land is marked transferable.
-
-Sale Posting: Owners can list land with price & share for sale.
-
-Secure Purchase: Buyer pays in ETH → share is transferred automatically.
-
-Duplicate Prevention: Ensures no land is registered twice
-
-Deployment
-You can deploy this contract using Remix.
-Remix Steps:
-Open https://remix.ethereum.org
-Create LandAdministration.sol
-Compile (Solidity 0.8.x)
-Deploy using Remix VM 
+## License
+**MIT**
